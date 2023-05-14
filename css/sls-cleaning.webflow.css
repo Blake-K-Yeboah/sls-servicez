@@ -7,6 +7,15 @@
     display: grid;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
 body {
     color: #1a1b1f;
     font-family: Montserrat, sans-serif;
