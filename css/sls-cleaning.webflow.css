@@ -2120,6 +2120,10 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+    #Message {
+        margin-bottom: 110px;
+    }
+
     .section.cc-cta {
         margin-left: 0;
         margin-right: 0;
