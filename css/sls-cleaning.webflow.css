@@ -348,7 +348,7 @@ figcaption {
 .heading-jumbo-small {
     max-width: 1280px;
     text-align: center;
-    text-transform: none;
+    text-transform: capitalize;
     margin: 10px 0 15px;
     font-size: 36px;
     font-weight: 400;
@@ -405,12 +405,64 @@ figcaption {
     right: 0%;
 }
 
+#w-node-_99f1d754-4cb8-380e-e354-24a501788cf2-6d5ceff5,
+.free-quote-image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.free-quote-image-group {
+    max-width: 350px;
+    padding: 0 25px;
+}
+
+.free-quote-image-group > img:last-of-type {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .free-quote-image-group > img:last-of-type {
+        display: block;
+    }
+
+    .cta-wrap {
+        padding-top: 0 !important;
+    }
+
+    .cc-cta.section > .container {
+        margin-top: 20px;
+    }
+}
+
 .navigation-wrap {
     flex: 1;
     justify-content: space-between;
     align-items: center;
     display: flex;
     position: relative;
+}
+
+.mobile-logo-image {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .mobile-logo-image,
+    .mobile-logo-image > img {
+        display: block;
+        width: 50px;
+        max-width: 50px;
+    }
+
+    .logo-link:not(.mobile-logo-image) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-link:not(.mobile-logo-image) img {
+        width: 150px;
+    }
 }
 
 .navigation {
@@ -997,6 +1049,7 @@ figcaption {
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .about-grid {
@@ -2904,8 +2957,7 @@ figcaption {
     }
 
     .navigation {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 5px 20px !important;
     }
 
     .menu-button,
